@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OfekTwitter</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
+    <script src="node_modules/axios/dist/axios.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="Javascript/Logic.js"></script>
+</head>
+<body>
+
+<div class="container visible-lg-inline-block">
+
+    <div class="visible-lg-inline-block">
+        <img src="Images/Dealer.jpg" height="100" width="100"/>
+        <label id="ComputerLabel">Computer</label>
+        <input disabled="disabled" id="ComputerHand">
+        <div id="ComputerPictures">
+        </div>
+    </div>
+
+    <div class="visible-lg-inline-block">
+        <img src="Images/Player.png" height="100" width="100"/>
+        <label id="PlayerLabel">Player</label>
+        <input disabled="disabled" id="PlayerHand">
+        <div id="PlayerPictures">
+        </div>
+    </div>
+
+    <label id="Resultabel">Result</label>
+    <input disabled="disabled" id="Result">
+
+</div>
+<div>
+    <button class="btn btn-success" id="TakeCardButton" disabled="disabled" onclick="PlayerTern()"
+            style="width: 6%; height: 18%;">Card</button>
+    <button class="btn btn-warning" id="CheckButton"  onclick="ComputerTern()"
+            style="width: 6%; height: 18%;">Check</button>
+</div>
+</body>
+</html>
